@@ -11,7 +11,7 @@ def get_users(request):
     users_data = [
         {
             'id': user.id,
-            'name': user.username,
+            'name': user.name,
             'email': user.email
         }
         for user in users
