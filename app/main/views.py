@@ -2,8 +2,8 @@ from django.shortcuts import render
 
 # apps/views.py
 from django.http import JsonResponse
-from postgre.database import get_db
-from postgre.models import Test
+from postgres.database import get_db
+from postgres.models import Test
 
 def get_users(request):
     db = next(get_db())
